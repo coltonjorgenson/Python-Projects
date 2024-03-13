@@ -1,0 +1,32 @@
+Instructions
+Checkpoint 1 Passed
+1.
+You are starting a new campaign for your online shop where every 11th customer gets 11% off of their next order. For ease, you decide that order numbers that are divisible by 11 will receive the coupon.
+
+Here comes order #263! Find the remainder by calculating 263 modulo 11 and store the result in a variable called order_263_r.
+
+Print out order_263_r.
+
+
+Stuck? Get a hint
+Checkpoint 2 Passed
+2.
+Based on the value of order_263_r, should this order receive a coupon? Create a new variable called order_263_coupon and assign to it a value of "yes" if the order should get a coupon, otherwise "no".
+
+Note: If you have prior experience with logic and programming, you might be thinking this sounds like a perfect place to utilize control flow with if and conditional expressions. You are not wrong, but we have not covered those yet! To complete this step, simply assign the value of order_263_coupon to "yes" or "no" directly, depending on the value of order_263_r from the previous step.
+
+
+Hint
+If two numbers are divisible, the remainder will be 0.
+
+Checkpoint 3 Passed
+3.
+Here comes another order, #264! Find the remainder by calculating 264 modulo 11 and store the result in a variable called order_264_r.
+
+Print out order_264_r.
+
+
+Stuck? Get a hint
+Checkpoint 4 Passed
+4.
+Based on the value of order_264_r, should this order receive a coupon? Create a new variable called order_264_coupon and assign to it a value of "yes" if the order should get a coupon, otherwise "no".
