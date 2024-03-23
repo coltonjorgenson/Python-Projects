@@ -37,7 +37,7 @@ def make_deposit(account_type, amount, checking_balance, savings_balance):
             savings_balance += amount
             deposit_status = "successful"
         elif account_type == "checking":
-            check_balance += amount
+            checking_balance += amount
             deposit_status = "successful"
             #else of an error statement
         else:
@@ -45,12 +45,23 @@ def make_deposit(account_type, amount, checking_balance, savings_balance):
     else:
         deposit_status = 'unsucessful, please enter an amount greater than 0'
         #assigning to the deposit_statement variable
-        deposit_statement = 'deposit of ' + str(amount) + 'to your ' + account_type + 'account was ' + deposit_status + '.'
-        print(deposit_statement)
-        #
-        return savings_balance, checking_balance
+    deposit_statement = 'deposit of ' + str(amount) + 'to your ' + account_type + 'account was ' + deposit_status + '.'
+    print(deposit_statement)
+    #return savings and checking balances each time the make deposit function is run
+    return savings_balance, checking_balance
 
+#calling make deposit function to update bank account after savings deposit of $10
+savings_balance, checking_balance = make_deposit("savings", 10, checking_balance, savings_balance)
 
+#printing the savings balance
+print(check_balance("savings", checking_balance, savings_balance))
+
+#calling make deposit function to update bank account after checking deposit of $200
+#assign the function call to the checking_balance and savings_balance
+checking_balance, savings_balance = make_deposit("checking", 200, checking_balance, savings_balance)
+
+#now calling check_balance to get an updated balance
+print(check_balance("checking", checking_balance, savings_balance))
 
 #Step 4 - Allow the customer to make a withdrawal to their bank account
 
